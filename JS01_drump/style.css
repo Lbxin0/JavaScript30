@@ -1,0 +1,80 @@
+html {
+  font-size: 10px;
+  background: url(http://i.imgur.com/b9r5sEL.jpg) center / 100% 100%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 650) {
+  .opens {
+    display: none;
+  }
+}
+.keys {
+  display: flex;
+  /* flex: 1; */
+  flex-flow: row wrap; /* 换行设置 */
+  min-height: 100vh;
+  align-items: center; /* item在交叉轴上的对齐方式 */
+  justify-content: center; /* justify-content,决定item在主轴上的对齐方式 */
+}
+
+.key {
+  border: 0.4rem solid black;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  flex: 1;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.05s ease-in;
+  /* width: 10rem; */
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+/* 移动端刷新适配 */
+.media {
+  width: 8rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #ffc600;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  position: fixed;
+  bottom: 2rem;
+  right: 1.2rem;
+  transition: 0.5s all;
+  display: none;
+}
+.media:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: #ff5e00;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
