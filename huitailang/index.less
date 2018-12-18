@@ -1,0 +1,114 @@
+@cc:#ccc;
+
+
+
+
+#container{
+    width: 320px;
+    height: 480px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border:1px solid red; 
+    background: url('../images/game_bg.jpg') center no-repeat / 100% 100%;
+    background-size:contain;
+    .score{
+        height: 50px;
+        line-height: 50px;
+        font-size: 22px;
+        color: #ffffff;
+        font-weight: bold;
+        margin-left: 60px;
+        position: absolute;
+    }
+    .slidebar{
+        width: 180px;
+        height: 17px;
+        background: url('../images/progress.png') center no-repeat / 100% 100%;
+        background-size:cover;
+        border-radius: 8.5px;
+        position: absolute;
+        top: 66px;
+        left: 63px;
+
+    }
+    .wolfimg{
+        position: absolute;
+        // width: 108px;
+        // height: 101px;
+    }
+    .ruleitem{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        line-height: 1;
+        text-align: center;
+        background: rgba(0,0,0,0.5);
+        z-index: 100;
+        color: #fff;
+        position: absolute;
+        display: none;
+        opacity: 0;
+        ul{
+            li{
+                width: 85%;
+                height: 50px;
+                line-height:50px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .closerule{
+            color: red;
+            cursor: pointer;
+            margin-top: 20px;
+            animation: expand 1s infinite;
+        }
+        @keyframes expand {
+            33%{
+                transform: scale(1.1)
+            }
+            99%{
+                transform: scale(1)
+            }
+        }
+    }
+    .start,
+    .restart{
+        width: 150px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        margin-left: -75px;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .start{
+        background: linear-gradient(#E55C3D,#C50000);
+    }
+    .restart{
+        background: linear-gradient(#74ACCF,#007DDC);
+        display: none;
+    }
+    .footer{
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        background: @cc;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    
+}
