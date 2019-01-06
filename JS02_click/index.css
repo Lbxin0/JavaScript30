@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #9c9;
+  width: 100%;
+  overflow: hidden;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#contnet {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+#contnet .clickO {
+  width: 100%;
+  height: 15rem;
+  line-height: 15rem;
+  border: 1.15rem solid #f96;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+#contnet .clickO .clockAll {
+  width: 9rem;
+  height: 9rem;
+  line-height: 9rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -4.5rem;
+  margin-left: -4.5rem;
+  border-radius: 50%;
+}
+#contnet .clickO .houer,
+#contnet .clickO .minum,
+#contnet .clickO .seconds {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, 50%);
+  transform-origin: right;
+  padding-right: 5px;
+  border-radius: 0.1rem;
+}
+#contnet .clickO .houer {
+  width: 4.5rem;
+  height: 0.15rem;
+  line-height: 0.15rem;
+  background: red;
+  transform: rotate(0deg);
+}
+#contnet .clickO .houer::after {
+  content: " ";
+  width: 0.7rem;
+  height: 100%;
+  background: red;
+  position: absolute;
+  right: -0.7rem;
+}
+#contnet .clickO .minum {
+  width: 4rem;
+  background: green;
+  height: 0.23rem;
+  line-height: 0.23rem;
+  margin-left: 0.5rem;
+  transform: rotate(180deg);
+}
+#contnet .clickO .minum::after {
+  content: " ";
+  width: 0.55rem;
+  height: 100%;
+  background: green;
+  position: absolute;
+  right: -0.55rem;
+}
+#contnet .clickO .seconds {
+  width: 3.5rem;
+  margin-left: 1rem;
+  background: blue;
+  margin-top: 0.02rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  transform: rotate(0deg);
+}
+#contnet .clickO .seconds::after {
+  content: " ";
+  width: 0.35rem;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  right: -0.35rem;
+}
+#contnet .clickO .clickbar {
+  width: 100%;
+  height: 0.95rem;
+  line-height: 0.95rem;
+  color: #000;
+  padding: 0 0.35rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+#contnet .clickO .clickbar::before {
+  width: 20px;
+  float: left;
+}
+#contnet .clickO .clickbar::after {
+  width: 20px;
+  float: right;
+}
+#contnet .clickO .clickbar:nth-child(1) {
+  transform: rotate(0deg);
+}
+#contnet .clickO .clickbar:nth-child(1)::after {
+  content: "3";
+  transform: rotate(0deg);
+}
+#contnet .clickO .clickbar:nth-child(1)::before {
+  content: "9";
+  transform: rotate(0deg);
+}
+#contnet .clickO .clickbar:nth-child(2) {
+  transform: rotate(-30deg);
+}
+#contnet .clickO .clickbar:nth-child(2)::after {
+  content: "2";
+  transform: rotate(30deg);
+}
+#contnet .clickO .clickbar:nth-child(2)::before {
+  content: "8";
+  transform: rotate(30deg);
+}
+#contnet .clickO .clickbar:nth-child(3) {
+  transform: rotate(-60deg);
+}
+#contnet .clickO .clickbar:nth-child(3)::after {
+  content: "1";
+  transform: rotate(60deg);
+}
+#contnet .clickO .clickbar:nth-child(3)::before {
+  content: "7";
+  transform: rotate(60deg);
+}
+#contnet .clickO .clickbar:nth-child(4) {
+  transform: rotate(-90deg);
+}
+#contnet .clickO .clickbar:nth-child(4)::after {
+  content: "12";
+  transform: rotate(90deg);
+}
+#contnet .clickO .clickbar:nth-child(4)::before {
+  content: "6";
+  transform: rotate(90deg);
+}
+#contnet .clickO .clickbar:nth-child(5) {
+  transform: rotate(-120deg);
+}
+#contnet .clickO .clickbar:nth-child(5)::after {
+  content: "11";
+  transform: rotate(120deg);
+}
+#contnet .clickO .clickbar:nth-child(5)::before {
+  content: "4";
+  transform: rotate(120deg);
+}
+#contnet .clickO .clickbar:nth-child(6) {
+  transform: rotate(-150deg);
+}
+#contnet .clickO .clickbar:nth-child(6)::after {
+  content: "10";
+  transform: rotate(150deg);
+}
+#contnet .clickO .clickbar:nth-child(6)::before {
+  content: "5";
+  transform: rotate(150deg);
+}
